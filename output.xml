@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.6.8 on win32)" generated="20210922 15:09:11.107" rpa="false" schemaversion="2">
+<suite id="s1" name="TC1" source="C:\Users\minhn\PycharmProjects\Demo\TestCase\TC1.robot">
+<test id="s1-t1" name="Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://hrms.cmcglobal.com.vn</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210922 15:09:11.475" level="INFO">Opening browser 'chrome' to base url 'https://hrms.cmcglobal.com.vn'.</msg>
+<status status="PASS" starttime="20210922 15:09:11.474" endtime="20210922 15:09:14.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>normal_login_username nvtu3</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210922 15:09:14.960" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20210922 15:09:14.960" endtime="20210922 15:09:14.960"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>normal_login_password tutuan123@</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210922 15:09:14.962" endtime="20210922 15:09:14.962"/>
+</kw>
+<status status="FAIL" starttime="20210922 15:09:11.471" endtime="20210922 15:09:14.963">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20210922 15:09:11.109" endtime="20210922 15:09:14.967"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210922 15:09:11.465" level="ERROR">Error in file 'C:\Users\minhn\PycharmProjects\Demo\Resources\LoginKeywords.robot' on line 3: Variable file '..\PageObject1.py' does not exist.</msg>
+</errors>
+</robot>
